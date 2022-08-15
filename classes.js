@@ -1,4 +1,4 @@
-class Student {
+class Human {
     name= ''
     grade= 100
 
@@ -12,8 +12,16 @@ class Student {
 
 }
 
+class Teacher extends Human {
+    currentlyTeaching = 'yes'
+    sayHi () {
+        return `Hi, I am professor ${this.name} `
+    }
+
+}
+
 let student1= new Student ('Bobby')
-let student2= new Student('Jennifer')
+let teacher= new Teacher('Jennifer')
 
 console.log(student1.name)
 console.log(student1.sayHi())
